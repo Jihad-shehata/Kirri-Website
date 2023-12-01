@@ -1,0 +1,424 @@
+/* ---------------------- Shared Styles--------------------- */
+html {
+    scroll-padding-top: 90px;
+}
+
+body {
+
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: #e4ebf1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.max-width-500 {
+    max-width: 500px;
+}
+
+.text-gray {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.bg-main {
+    background-color: #cd5b70 !important;
+}
+
+.text-main {
+    color: #cd5b70 !important;
+}
+
+/* ---------------------- Navbar & Home & Home Animation--------------------- */
+.nav-link {
+    color: #2b2424 !important;
+}
+
+.navbar {
+    background-color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link.active {
+    color: #cd5b70 !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #cd5b70 !important;
+}
+
+.home {
+    background-image: url(../images/header-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.btn:hover {
+    background-color: white !important;
+
+    cursor: pointer;
+}
+
+.btn:hover a {
+    color: #2b2424 !important;
+}
+
+.settings {
+    top: 30%;
+    background-color: #2b2424;
+    padding: 10px;
+
+}
+
+.mouse_icon div {
+    width: 30px;
+    height: 50px;
+    border: 2px solid white;
+    --fa-bounce-height: -2rem;
+}
+
+.mouse_icon {
+    bottom: 5%;
+    position: relative;
+}
+
+.mouse_icon div::after {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 10px;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    border-radius: 3px;
+}
+
+/* .content h1::after
+{
+    content: "  |";
+    animation: typing 3s linear 1s infinite alternate;
+}
+@keyframes typing {
+    0% {
+        content: " G|";
+    }
+
+    6% {
+        content: " Gr|";
+    }
+
+    12% {
+        content: " Gra|";
+    }
+
+    18% {
+        content: " Grap|";
+    }
+
+    24% {
+        content: " Graph|";
+    }
+
+    30% {
+        content: " Graphi|";
+    }
+
+    36% {
+        content: " Graphic|";
+    }
+
+    42% {
+        content: " Graphic |";
+    }
+
+    48% {
+        content: " Graphic De|";
+    }
+
+    56% {
+        content: " Graphic Des|";
+    }
+
+    72% {
+        content: " Graphic Desi|";
+    }
+
+    78% {
+        content: " Graphic Desig|";
+    }
+
+    84% {
+        content: " Graphic Design|";
+    }
+
+    90% {
+        content: " Graphic Designe|";
+    }
+
+    100% {
+        content: " Graphic Designer|";
+    }
+}*/
+#container {
+    text-align: center;
+}
+
+#text {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    letter-spacing: 2px;
+    padding-bottom: 6px;
+}
+
+#cursor {
+    display: inline-block;
+    vertical-align: middle;
+    width: 3px;
+    height: 50px;
+    background-color: white;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        background-color: transparent
+    }
+
+    50% {
+        background-color: white;
+    }
+}
+
+
+/* -------------- About----------- */
+.section2 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.p-color {
+    color: #6c757d;
+
+}
+
+.fa-earth-americas {
+    color: #212121;
+}
+
+.icon-w:hover .fa-earth-americas {
+    color: #cd5b70 !important;
+    border-color: #cd5b70 !important;
+    cursor: pointer;
+}
+
+.icon-w {
+    height: 2.5em;
+    width: 2.5em;
+    border: #2b2424;
+}
+
+.icon-w:hover {
+    color: #cd5b70 !important;
+    border-color: #cd5b70 !important;
+    cursor: pointer;
+}
+
+/* --------------- Services ------------ */
+.sevvice {
+    background-color: #F8F9FA;
+    color: #212530;
+}
+
+.p-color {
+    color: #6c757d;
+    font-weight: light;
+    line-height: 24px;
+    font-size: 19px;
+
+}
+
+.ic-color {
+    color: #cd5b70;
+}
+
+.div-line {
+    width: 40px;
+    height: 2px;
+    background-color: #cd5b70;
+    transition: all .75s;
+}
+
+.col-pad {
+    padding: 20px;
+}
+
+.card-content:hover .div-line {
+    transform: scalex(1.8);
+}
+
+/* --------------Hire Me-------------- */
+.hire {
+    color: #2b2424;
+    font-weight: bold;
+    padding-top: 80px;
+
+}
+
+.hire-btn {
+    background-color: #e65f78;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 32px;
+}
+
+.hire-btn:hover {
+    opacity: 0.95;
+    cursor: pointer;
+}
+
+/* -------------- Client---------------- */
+.client {
+    background-color: #F8F9FA;
+}
+
+.qoute-icon {
+    color: #cd5b70;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #cd5b70;
+    width: 13px;
+    height: 3px;
+    border: 2px solid transparent;
+    border-radius: 110px;
+}
+
+.carousel-indicators .active {
+    width: 20px;
+}
+
+/* -------------- portfolio---------------- */
+.nav-pills .nav-link {
+    color: black;
+    border-radius: 100px;
+
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+    background-color: #e65f78;
+    color: white !important;
+
+}
+
+.work-item .work-item-layer {
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.5s;
+}
+
+.work-item:hover .work-item-layer {
+    background-color: rgba(0, 0, 0, 0.511);
+}
+
+.work-item:hover img {
+    transform: scale(1.2);
+}
+
+.work-item img {
+    transition: transform 0.3s;
+}
+
+.work-item:hover .work-item-content {
+    top: 0 !important;
+    bottom: 0;
+}
+
+.work-item-content {
+    transition: all 0.5s;
+}
+
+/* ----------- Blog--------------- */
+.blog {
+    background-color: #F8F9FA;
+}
+
+#By-Kerri {
+    color: #e65f78;
+}
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+/* --------------Contact------------- */
+.fa-solid {
+    color: #cd5b70;
+}
+
+.fa-regular {
+    color: #cd5b70;
+}
+
+/* -------------Contact---------- */
+.form-bor {
+    border: 2px solid #e4ebf1;
+}
+
+.form-bor:hover {
+    border-color: #e65f78;
+}
+
+.area {
+    resize: both;
+}
+
+.butt {
+    background-color: #e65f78;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.butt:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.foot {
+    background-color: #212121;
+}
+
+.icon-ww {
+    border: none;
+    background-color: #313131;
+}
+
+.ic {
+    color: #cad3db;
+    transition: transform 0.5s;
+}
+
+.ic:hover {
+    color: #e65f78;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.clr {
+    clear: both;
+}
